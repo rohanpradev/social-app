@@ -20,16 +20,7 @@ import React from "react";
 import { cn } from "@/utils/cn";
 import { AcmeIcon } from "@/utils/social";
 
-const menuItems = [
-  "About",
-  "Blog",
-  "Customers",
-  "Pricing",
-  "Enterprise",
-  "Changelog",
-  "Documentation",
-  "Contact Us",
-];
+const menuItems = ["About", "Blog", "Customers", "Pricing", "Enterprise", "Changelog", "Documentation", "Contact Us"];
 
 export default function NavbarNormal(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -123,12 +114,7 @@ export default function NavbarNormal(props: NavbarProps) {
           </Button>
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4">
-          <Button
-            fullWidth
-            as={Link}
-            className="bg-foreground text-background"
-            href="/#"
-          >
+          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
             Get Started
           </Button>
         </NavbarMenuItem>

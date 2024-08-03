@@ -8,7 +8,6 @@ import { AcmeIcon } from "@/utils/social";
 
 export default function Component() {
   const [isVisible, setIsVisible] = React.useState(false);
-
   const toggleVisibility = () => setIsVisible(!isVisible);
 
   return (
@@ -33,8 +32,7 @@ export default function Component() {
       <div className="absolute bottom-10 right-10 hidden md:block">
         <p className="max-w-xl text-right text-white/60">
           <span className="font-medium">“</span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget
-          augue nec massa volutpat aliquet.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget augue nec massa volutpat aliquet.
           <span className="font-medium">”</span>
         </p>
       </div>
@@ -42,30 +40,15 @@ export default function Component() {
       {/* Login Form */}
       <div className="flex w-full max-w-sm flex-col gap-4 rounded-large bg-content1 px-8 pb-10 pt-6 shadow-small">
         <p className="pb-2 text-xl font-medium">Log In</p>
-        <form
-          className="flex flex-col gap-3"
-          onSubmit={(e) => e.preventDefault()}
-        >
-          <Input
-            label="Email Address"
-            name="email"
-            placeholder="Enter your email"
-            type="email"
-            variant="bordered"
-          />
+        <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
+          <Input label="Email Address" name="email" placeholder="Enter your email" type="email" variant="bordered" />
           <Input
             endContent={
               <button type="button" onClick={toggleVisibility}>
                 {isVisible ? (
-                  <Icon
-                    className="pointer-events-none text-2xl text-default-400"
-                    icon="solar:eye-closed-linear"
-                  />
+                  <Icon className="pointer-events-none text-2xl text-default-400" icon="solar:eye-closed-linear" />
                 ) : (
-                  <Icon
-                    className="pointer-events-none text-2xl text-default-400"
-                    icon="solar:eye-bold"
-                  />
+                  <Icon className="pointer-events-none text-2xl text-default-400" icon="solar:eye-bold" />
                 )}
               </button>
             }
@@ -93,18 +76,10 @@ export default function Component() {
           <Divider className="flex-1" />
         </div>
         <div className="flex flex-col gap-2">
-          <Button
-            startContent={<Icon icon="flat-color-icons:google" width={24} />}
-            variant="bordered"
-          >
+          <Button startContent={<Icon icon="flat-color-icons:google" width={24} />} variant="bordered">
             Continue with Google
           </Button>
-          <Button
-            startContent={
-              <Icon className="text-default-500" icon="fe:github" width={24} />
-            }
-            variant="bordered"
-          >
+          <Button startContent={<Icon className="text-default-500" icon="fe:github" width={24} />} variant="bordered">
             Continue with Github
           </Button>
         </div>
