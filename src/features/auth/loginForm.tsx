@@ -27,6 +27,7 @@ const LoginForm = () => {
   const toggleVisibility = () => setIsVisible(!isVisible);
 
   const onSubmit = (values: LoginType) => {
+    setError("");
     startTransition(async () => {
       const { error } = await login(values);
       if (error) setError(error);

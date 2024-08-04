@@ -28,6 +28,7 @@ const SignUpForm = () => {
   const toggleVisibility = () => setIsVisible(!isVisible);
 
   const onSubmit = (values: SignUpType) => {
+    setError("");
     startTransition(async () => {
       const { error } = await signUp(values);
       if (error) setError(error);

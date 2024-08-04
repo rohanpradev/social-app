@@ -1,4 +1,5 @@
-import { db, sessionTable, userTable } from "@/lib/drizzle";
+import { db } from "@/lib/drizzle";
+import { sessionTable, userTable } from "@/lib/schema";
 import { DrizzlePostgreSQLAdapter } from "@lucia-auth/adapter-drizzle";
 import { Lucia, type Session, type User } from "lucia";
 import { cookies } from "next/headers";
