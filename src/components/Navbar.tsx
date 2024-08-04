@@ -37,8 +37,7 @@ export default function NavbarNormal(props: NavbarProps) {
       }}
       height="60px"
       isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-    >
+      onMenuOpenChange={setIsMenuOpen}>
       {/* Left Content */}
       <NavbarBrand>
         <div className="rounded-full bg-foreground text-background">
@@ -87,8 +86,7 @@ export default function NavbarNormal(props: NavbarProps) {
             color="secondary"
             endContent={<Icon icon="solar:alt-arrow-right-linear" />}
             radius="full"
-            variant="flat"
-          >
+            variant="flat">
             Get Started
           </Button>
         </NavbarItem>
@@ -106,8 +104,7 @@ export default function NavbarNormal(props: NavbarProps) {
             ease: "easeInOut",
             duration: 0.2,
           },
-        }}
-      >
+        }}>
         <NavbarMenuItem>
           <Button fullWidth as={Link} href="/#" variant="faded">
             Sign In

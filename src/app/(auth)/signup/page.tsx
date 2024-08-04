@@ -21,8 +21,7 @@ export default function Component() {
           "url(https://nextuipro.nyc3.cdn.digitaloceanspaces.com/components-images/black-background-texture-2.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-      }}
-    >
+      }}>
       {/* Brand Logo */}
       <div className="absolute right-10 top-10">
         <div className="flex items-center">
