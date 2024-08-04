@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check": "bunx biome check --write ./src"
+    "check": "bunx biome check --write --unsafe ./src"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

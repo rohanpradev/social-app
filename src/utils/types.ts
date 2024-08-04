@@ -1,3 +1,3 @@
 import type { SVGProps } from "react";
 
-export type IconsvgProps = SVGProps<SVGElement> & { size?: number };
+export type IconSvgProps = SVGProps<SVGElement> & { size?: number };

@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="dark text-foreground bg-background">
+      <body className="dark bg-background text-foreground">
         <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>

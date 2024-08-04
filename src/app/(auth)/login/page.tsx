@@ -20,7 +20,7 @@ export default function Component() {
         backgroundPosition: "center",
       }}>
       {/* Brand Logo */}
-      <div className="absolute right-10 top-10">
+      <div className="absolute top-10 right-10">
         <div className="flex items-center">
           <AcmeIcon className="text-white" size={40} />
           <p className="font-medium text-white">ACME</p>
@@ -28,7 +28,7 @@ export default function Component() {
       </div>
 
       {/* Testimonial */}
-      <div className="absolute bottom-10 right-10 hidden md:block">
+      <div className="absolute right-10 bottom-10 hidden md:block">
         <p className="max-w-xl text-right text-white/60">
           <span className="font-medium">“</span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget augue nec massa volutpat aliquet.
@@ -37,8 +37,8 @@ export default function Component() {
       </div>
 
       {/* Login Form */}
-      <div className="flex w-full max-w-sm flex-col gap-4 rounded-large bg-content1 px-8 pb-10 pt-6 shadow-small">
-        <p className="pb-2 text-xl font-medium">Log In</p>
+      <div className="flex w-full max-w-sm flex-col gap-4 rounded-large bg-content1 px-8 pt-6 pb-10 shadow-small">
+        <p className="pb-2 font-medium text-xl">Log In</p>
         <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
           <Input label="Email Address" name="email" placeholder="Enter your email" type="email" variant="bordered" />
           <Input
@@ -71,7 +71,7 @@ export default function Component() {
         </form>
         <div className="flex items-center gap-4 py-2">
           <Divider className="flex-1" />
-          <p className="shrink-0 text-tiny text-default-500">OR</p>
+          <p className="shrink-0 text-default-500 text-tiny">OR</p>
           <Divider className="flex-1" />
         </div>
         <div className="flex flex-col gap-2">
