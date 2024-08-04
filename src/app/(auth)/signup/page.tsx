@@ -4,9 +4,10 @@ import { Icon } from "@iconify/react";
 import { Button, Checkbox, Divider, Input, Link } from "@nextui-org/react";
 import React from "react";
 
+import signUpimage from "@/assets/auth.jpg";
 import { AcmeIcon } from "@/utils/social";
 
-export default function Component() {
+export default function SignUpPage() {
   const [isVisible, setIsVisible] = React.useState(false);
   const [isConfirmVisible, setIsConfirmVisible] = React.useState(false);
 
@@ -17,8 +18,7 @@ export default function Component() {
     <div
       className="flex h-screen w-screen items-center justify-start overflow-hidden rounded-small bg-content1 p-2 sm:p-4 lg:p-8"
       style={{
-        backgroundImage:
-          "url(https://nextuipro.nyc3.cdn.digitaloceanspaces.com/components-images/black-background-texture-2.jpg)",
+        backgroundImage: `url(${signUpimage.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}>
@@ -26,7 +26,7 @@ export default function Component() {
       <div className="absolute top-10 right-10">
         <div className="flex items-center">
           <AcmeIcon className="text-white" size={40} />
-          <p className="font-medium text-white">ACME</p>
+          <p className="font-medium text-white">bugBook</p>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ export default function Component() {
         </div>
         <p className="text-center text-small">
           Already have an account?&nbsp;
-          <Link href="#" size="sm">
+          <Link href="/login" size="sm">
             Log In
           </Link>
         </p>
