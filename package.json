@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check": "bunx biome check --write --unsafe ./src"
+    "check": "bunx biome check --write --unsafe ./src",
+    "db:view": "bunx drizzle-kit studio"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
